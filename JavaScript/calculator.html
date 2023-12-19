@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <style>
+       body {
+            font-family: Arial, sans-serif;
+            background-color: #ffe4e1; /* Soft peach background */
+            margin: 50px 0;
+          }
+          
+          h1 {
+            text-align: center;
+            font-size: 2em;
+            color: #9b59b6; /* Deep purple heading */
+            padding-bottom: 20px;
+          }
+          
+          form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 300px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            background-color: #ffffff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          }
+          
+          p {
+            margin-bottom: 10px;
+            font-size: 1.2em;
+            color: #808080;
+          }
+          
+          #age1 {
+            padding: 5px 10px;
+            border: 1px solid #ddd;
+            border-radius: 3px;
+            font-size: 1.2em;
+          }
+          
+          button {
+            margin-top: 10px;
+            padding: 8px 15px;
+            border: none;
+            border-radius: 3px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            background-color: #9b59b6; /* Deep purple button */
+            color: #ffffff;
+          }
+          
+          button:hover {
+            background-color: #800080; /* Darken purple on hover */
+          }
+          
+          #result1 {
+            margin-top: 20px;
+            font-size: 1.5em;
+            text-align: center;
+            font-weight: bold;
+          }
+          
+          #result1.success {
+            color: #4caf50; /* Vibrant green for successful calculation */
+          }
+          
+          #result1.error {
+            color: #f44336; /* Red for potential errors */
+          }
+          #001 {
+  position: fixed; /* Fix the element to the viewport */
+  bottom: 0; /* Place it at the bottom */
+  left: 0; /* Align it to the left edge */
+  right: 0; /* Stretch it to the right edge */
+  margin: 0 auto; /* Center it horizontally */
+}
+
+#001 button {
+  width: 100px; /* Adjust button width according to your preference */
+}
+
+    </style>
+    <head>
+        <title>Calculator</title>
+    </head>
+    <body>
+        <h1 align="center">Calculator</h1>
+        <form action="javascript:void(0);" align="center">
+            <p>Number1<input type="number" id="a" placeholder="Enter your Number" required></p>
+            <p>Number2<input type="number" id="b" placeholder="Enter your Number" required></p>
+            <script src="First.js"></script>
+            <button type="button" onclick="add()">Add</button>
+            <button type="button" onclick="sub()">Subtraction</button>
+            <button type="button" onclick="mul()">Multiplication</button>
+            <button type="button" onclick="div()">Division</button>
+        </form>
+        
+        <p id="Result" align ="center"></p>
+        <p align ='center'><a href="age.html"><button>Age</button></p>
+            <p align ='center'><a href="calculator.html"><button>Calculator</button></p>
+    </body>
+</html>
